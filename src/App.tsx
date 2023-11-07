@@ -73,6 +73,7 @@ const App: React.FC = () => {
        className="btn btn-secondary mt-2 md:mt-0 md:ml-2 flex items-center justify-center p-1"
      >  Copy
      </button>
+    <div className='px-2'><button className='btn btn-info' onClick={() => window.location.reload()}>Reload</button></div>
    </div>
    
     
