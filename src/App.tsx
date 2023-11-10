@@ -28,7 +28,7 @@ const [rateLimitMessage, setRateLimitMessage] = useState<string>('');
     }
   
     try {
-      const response = await fetch('http://localhost:3333/api/short', {
+      const response = await fetch('https://petite.onrender.com/api/short', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
