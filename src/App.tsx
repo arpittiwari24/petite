@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const App: React.FC = () => {
   const [origUrl, setOrigUrl] = useState<string>('');
