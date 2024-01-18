@@ -19,6 +19,10 @@ const [rateLimitMessage, setRateLimitMessage] = useState<string>('');
     setOrigUrl(event.target.value);
   };
 
+  const handleEdit = (event: React.FormEvent) => {
+    event.preventDefault()
+  }
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setLoading(true);
@@ -94,6 +98,11 @@ const [rateLimitMessage, setRateLimitMessage] = useState<string>('');
        onClick={() => navigator.clipboard.writeText(shortUrl)}
        className="btn btn-secondary mt-2 md:mt-0 md:ml-2 flex items-center justify-center p-1 w-20"
      >  <img src={CopyIcon} className='w-16 h-8' alt="copy"/>
+     </button>
+     <button
+       onClick={handleEdit}
+       className="btn btn-secondary mt-2 md:mt-0 md:ml-2 flex items-center justify-center p-1 w-20"
+     >  Edit
      </button>
     <div className='px-2'><button className='btn btn-info' onClick={() => window.location.reload()}><img src={Reload} className='w-16 h-8' alt="copy"/></button></div>
    </div>
